@@ -19,3 +19,6 @@ Para a autenticação dos usuários foi utilizado o Firebase.
 
 ### Banco de dados
 A aplicação utiliza o banco de dados real-time do Firebase, o que permite o acompanhamento das coletas em tempo real.
+
+### Video de demonstração do projeto
+#### https://vimeo.com/429778150
