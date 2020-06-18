@@ -1,0 +1,19 @@
+<div id="login">
+    <img src="../../assets/logo.png" alt="Logotipo collect active">
+    <form class="form" [formGroup]="loginGroup">
+        <mat-form-field class="form-field">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Digite seu email" formControlName="email" >
+        </mat-form-field>
+    
+        <mat-form-field class="form-field">
+            <mat-label>Email</mat-label>
+            <input matInput type="password" placeholder="Digite sua senha" formControlName="senha" >
+        </mat-form-field>
+        <a href="#">Esqueci minha senha</a>
+    </form>
+    <div style="width: 100%;">
+        <button class="btn btn-login" (click)="onLogin()">Entrar</button>
+        <button class="btn btn-cadastro" (click)="onLogin()">Cadastro</button>
+    </div>
+</div>

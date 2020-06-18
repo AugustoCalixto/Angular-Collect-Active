@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "nufinance-d9bad": {
+      "hosting": {
+        "coleta": [
+          "nufinance-d9bad"
+        ]
+      }
+    }
+  }
+}

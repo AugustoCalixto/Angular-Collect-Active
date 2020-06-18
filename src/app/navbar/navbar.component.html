@@ -1,0 +1,18 @@
+<mat-toolbar-row>
+    <div>
+        <span>Collect Active</span>
+        <mat-icon aria-hidden="false" aria-label="Abrir menu" (click)="toggleSidenav()">menu</mat-icon>
+    </div>
+</mat-toolbar-row>
+<div id="ofuscar" (click)="toggleSidenav()" *ngIf="sidebarActive"></div>
+<div *ngIf="sidebarActive" id="sidebar">
+    <div class="sidebar-content">
+        <a routerLink="/home">Pagina Inicial</a>
+        <a routerLink="/home">Ajude a Comunidade</a>
+        <a routerLink="/home">Sobre</a>
+        <a *ngIf="!user" routerLink="/cadastro">Cadastro</a>
+        <a *ngIf="!user" routerLink="/login">Login</a>
+        <a *ngIf="user" (click)="onLogout()">Sair</a>
+    </div>
+</div>
+<router-outlet></router-outlet>

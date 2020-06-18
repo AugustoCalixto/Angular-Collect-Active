@@ -1,0 +1,72 @@
+$primary: #3bc5a0;
+$primary2: #0c362a;
+$primary3: #176953;
+$primary4: #84f0d3;
+$primary5: #a3ffe6;
+$accent-blue: #84cff0;
+
+
+#mapa-brabo {
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    agm-map {
+        height: 200px;
+    }
+}
+
+#coleta {
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+
+    h2 {
+        margin-bottom: 3px;
+        font-family: "Roboto", sans-serif;
+        color: #414141;
+    }
+
+    .form-field {
+        width: 100%;
+    }
+
+    .form-field-rua {
+        width: 60%;
+    }
+
+    .form-field-numero {
+        width: 40%;
+    }
+
+    h4 {
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-family: "Roboto";
+        color: #666666;
+    }
+    .lista-material {
+        background: #f9f9f9;
+        border-radius: 15px;
+        padding: 10px 30px;
+
+        mat-checkbox {
+            display: block;
+        }
+    }
+
+    button {
+        background: $primary2;
+        color: #ffffff;
+        padding: 5px 75px;
+    }
+    button:disabled {
+        background: #949494;
+        color: #ffffff;
+        padding: 5px 75px;
+    }
+
+    
+}

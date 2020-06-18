@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "coleta",
+      "public": "dist/coleta",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

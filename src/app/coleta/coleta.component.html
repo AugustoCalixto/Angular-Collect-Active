@@ -1,0 +1,38 @@
+<div id="coleta">
+    <div id="mapa-brabo">
+        <h2>Agendar coleta</h2>
+        <agm-map [latitude]="city.lat" [longitude]="city.lon" [zoom]="zoom">
+            <agm-marker [latitude]="city.lat" [longitude]="city.lon"></agm-marker>
+        </agm-map>
+    </div>
+
+    <form class="form" [formGroup]="coletaGroup">
+        <mat-form-field class="form-field">
+            <mat-label>Bairro</mat-label>
+            <input matInput placeholder="Digite seu bairro"  formControlName="bairro">
+        </mat-form-field>
+
+        <mat-form-field class="form-field-rua">
+            <mat-label>Rua</mat-label>
+            <input matInput placeholder="Digite sua rua"  formControlName="rua">
+        </mat-form-field>
+
+        <mat-form-field class="form-field-numero">
+            <mat-label>Numero</mat-label>
+            <input matInput placeholder="Digite o numero da casa" formControlName="numero">
+        </mat-form-field>
+
+        <h4>Materiais p/ coleta</h4>
+        <div class="lista-material">
+            <mat-checkbox formControlName="papel">Papel</mat-checkbox>
+            <mat-checkbox formControlName="plastico">Plastico</mat-checkbox>
+            <mat-checkbox formControlName="organico">Lixo Orgânico</mat-checkbox>
+            <mat-checkbox formControlName="pilha">Pilhas/Baterias</mat-checkbox>
+        </div>
+    </form>
+
+    <div>
+        <button [disabled]="coletaGroup.invalid" type="submit" mat-button (click)="onSubmit()">Agendar</button>
+    </div>
+    <small style="color:#ad4b4b" *ngIf="coletaGroup.invalid">Verifique todos os campos antes de agendar.</small>
+</div>

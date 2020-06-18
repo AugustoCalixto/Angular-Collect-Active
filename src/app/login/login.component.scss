@@ -1,0 +1,52 @@
+$primary: #3bc5a0;
+$primary2: #0c362a;
+$primary3: #176953;
+$primary4: #84f0d3;
+$primary5: #a3ffe6;
+$accent-blue: #84cff0;
+
+#login {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 93%;
+
+    img {
+        width: 200px;
+        background-color: $primary3;
+        padding: 0px;
+        border-radius: 50%;
+    }
+
+    .form-field {
+        width: 100%;
+    }
+
+    button {
+        font-family: "Roboto";
+        background-color: $primary3;
+        border: none;
+        border-radius: 40px;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .btn-login {
+        background-color: $primary3;
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+
+    .btn-cadastro {
+        background-color: $primary3;
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+}
